@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AlpineJS Validation</title>
+</head>
+
+<body>
+  <div x-data>
+    <h1>
+      Foo <span x-text="$store.data.foo"></span>!
+    </h1>
+    <div>
+      Colors:
+      <ul>
+        <template x-for="color in $store.data.colors">
+          <li x-text="color"></li>
+        </template>
+      </ul>
+    </div>
+  </div>
+  <script src="dist/app.js"></script>
+</body>
+
+</html>
