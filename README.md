@@ -18,7 +18,8 @@ npm install
 # Static analysis with tsc but don't build
 tsc -noEmit 
 # Bundle app
-esbuild src/main.ts --bundle --outfile=dist/app.js
+# https://esbuild.github.io/api/#sourcemap
+esbuild src/main.ts --sourcemap --bundle --outfile=dist/app.js
 ```
 
 Use a static file server like [Caddy](https://caddy.community/),
