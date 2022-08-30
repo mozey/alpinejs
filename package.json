@@ -1,7 +1,6 @@
 {
   "dependencies": {
-    "alpinejs": "^3.10.3",
-    "esbuild": "^0.15.6"
+    "alpinejs": "^3.10.3"
   },
   "devDependencies": {
     "@types/alpinejs": "^3.7.0",

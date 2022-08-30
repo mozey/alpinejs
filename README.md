@@ -18,7 +18,7 @@ npm install
 # Static analysis with tsc but don't build
 tsc -noEmit 
 # Bundle app
-./node_modules/.bin/esbuild src/main.ts --bundle --outfile=dist/app.js
+esbuild src/main.ts --bundle --outfile=dist/app.js
 ```
 
 Use a static file server like [Caddy](https://caddy.community/),
@@ -43,13 +43,13 @@ Keep the `node_modules` dir lean. Only the AlpineJS source code is required. For
 npm install -S alpinejs
 npm install -D @types/alpinejs
 npm install -D @types/sprintf-js
+du -sh ./node_modules
+# 1.3M
 ```
 
-Bundling is done with `esbuild`. Version everything except binaries, see `.gitignore`
+Bundling is done with `esbuild`. Install globally (like `tsc`) instead of adding binaries to node_modules
 ```bash
-npm install esbuild
-du -sh -I esbuild ./node_modules
-# 1.3M
+brew install esbuild
 ```
 
 
