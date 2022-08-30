@@ -4,6 +4,10 @@ Validation service for use with AlpineJS.
 
 Repo can also be used as a starter for AlpineJS and TypeScript projects
 
+Styling is done with [w3.css](https://www.w3schools.com/w3css)
+
+Also see [angularjs-validation](https://github.com/mozey/angularjs-validation)
+
 
 ## Demo
 
@@ -32,12 +36,13 @@ TODO watcher script for live-reload?
 
 Inspired by [Getting started with AlpineJS and TypeScript](https://archive.ph/3uBQM).
 
-However, [vite does not use esbuild yet?](https://vitejs.dev/guide/why.html#why-not-bundle-with-esbuild). 
+However, [vite does not use esbuild yet?](https://vitejs.dev/guide/why.html#why-not-bundle-with-esbuild)
 
 Keep the `node_modules` dir lean. Only the AlpineJS source code is required. For JS dependencies only install the type definitions
 ```bash
 npm install -S alpinejs
 npm install -D @types/alpinejs
+npm install -D @types/sprintf-js
 ```
 
 Bundling is done with `esbuild`. Version everything except binaries, see `.gitignore`

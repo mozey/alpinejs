@@ -5,11 +5,12 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AlpineJS Validation</title>
+  <title>alpinejs-validation</title>
+  <link rel="stylesheet" href="vendor/w3-4.15.css">
 </head>
 
 <body>
-  <div x-data>
+  <div x-data class="w3-container w3-pale-green">
     <h1>
       Foo <span x-text="$store.data.foo"></span>!
     </h1>
@@ -22,6 +23,7 @@
       </ul>
     </div>
   </div>
+  <script src="vendor/sprintf-1.1.2.js"></script>
   <script src="dist/app.js"></script>
 </body>
 

@@ -4,6 +4,7 @@
     "esbuild": "^0.15.6"
   },
   "devDependencies": {
-    "@types/alpinejs": "^3.7.0"
+    "@types/alpinejs": "^3.7.0",
+    "@types/sprintf-js": "^1.1.2"
   }
 }
