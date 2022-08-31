@@ -15,15 +15,16 @@ Build
 ```bash
 # Static analysis of TypeScript source with tsc, don't bundle
 tsc -noEmit 
-# Bundle app Javascript and CSS with esbuild
+# Bundle app Javascript and CSS with esbuild.
+# Sourcemap enables viewing and debugging TypeScript source in Dev Console
 # https://esbuild.github.io/api/#sourcemap
-esbuild src/main.ts --sourcemap --bundle --outfile=dist/app.js
+esbuild src/app.ts --sourcemap --bundle --outfile=www/dist/app.js
 ```
 
 Use a static file server like [Caddy](https://caddy.community/),
 re-build and reload the page for changes
 ```bash
-caddy file-server -browse -listen localhost:8080 -root ./
+caddy file-server -browse -listen localhost:8080 -root ./www
 ```
 
 Open [localhost:8080](http://localhost:8080)
@@ -37,7 +38,7 @@ Inspired by [Getting started with AlpineJS and TypeScript](https://archive.ph/3u
 
 However, [vite does not use esbuild yet?](https://vitejs.dev/guide/why.html#why-not-bundle-with-esbuild)
 
-Keep the `node_modules` dir lean. Only the AlpineJS source code is required. For JS dependencies only install the type definitions
+Keep the `node_modules` dir lean!
 ```bash
 npm install -S alpinejs
 npm install -D @types/alpinejs

@@ -9,6 +9,7 @@ window.alpine = Alpine
 Alpine.store("data", {
   foo: sprintf("=> %s!", Date()),
   colors: ["green", "red", "yellow"],
+  bar: "bar"
 })
 
 // TODO Create x-validate directive for use with <form> nodes
@@ -24,4 +25,3 @@ Alpine.directive("uppercase", (el: Node) => {
 // global object is imported and when Alpine is initialized with
 // the Alpine.start() call"
 Alpine.start()
-
