@@ -1,12 +1,10 @@
 # alpinejs-validation
 
-Validation service for use with AlpineJS.
+AlpineJS and TypeScript starter project with validation directive example.
 
-Repo can also be used as a starter for AlpineJS and TypeScript projects
+Styling is done with [w3.css](https://www.w3schools.com/w3css) because it's similar to Bootstrap and easier to use.
 
-Styling is done with [w3.css](https://www.w3schools.com/w3css)
-
-Also see [angularjs-validation](https://github.com/mozey/angularjs-validation)
+Similar to [angularjs-validation](https://github.com/mozey/angularjs-validation) but simpler
 
 
 ## Demo
