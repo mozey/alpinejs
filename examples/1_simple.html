@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>alpinejs-validation</title>
+  <link rel="stylesheet" href="vendor/w3-4.15.css">
+</head>
+
+<body>
+    <div class="w3-row">&nbsp;</div>
+
+    <div class="w3-row">
+        <div class="w3-col m3">&nbsp;</div>
+        <div class="w3-col m6">
+            <form class="w3-container w3-card-2" 
+                x-data="{data:''}" 
+                x-on:submit="alert('Hello World!')">
+                <p>
+                    Hover over inputs to see tooltips.<br>
+                    The "Number" input has a default tooltip.<br>
+                    Click on submit to see validation messages
+                </p>
+                <p>
+                    <label>Name</label>
+                    <input class="w3-input" type="text">
+                </p>
+                <p class="w3-tooltip">
+                    <label>Number</label>
+                    <input class="w3-input" type="text">
+                    <span style="position:absolute;right:0;top:67px" 
+                        class="w3-text w3-tag">This is a default tooltip</span>
+                </p>
+                <p class="w3-tooltip">
+                    <label>Email</label>
+                    <input class="w3-input w3-pale-red w3-border-red" type="text">
+                    <span style="position:absolute;right:0;top:67px" 
+                        class="w3-text w3-tag w3-pale-yellow w3-text-red">Invalid email</span>
+                </p>
+                <p>
+                    <button class="w3-btn w3-blue">Submit</button>
+                </p>
+            </form>
+        </div>
+        <div class="w3-col m3">&nbsp;</div>
+    </div>
+
+    <script src="dist/app.js"></script>
+</body>
+
+</html>

@@ -1,7 +1,6 @@
 import Alpine from 'alpinejs'
-// TODO Passing the `--external:sprintf-js` flag to esbuild 
-// results in dynamic import runtime error. How to bundle pre-built deps?
-// import {sprintf} from "sprintf-js";
+import {sprintf} from "sprintf-js";
+import {Validation} from "./validation"
 
 // Make alpine available on window for better DX
 window.alpine = Alpine
@@ -11,5 +10,17 @@ Alpine.store("data", {
   colors: ["green", "red", "yellow"],
 })
 
+// TODO Create x-validate directive for use with <form> nodes
+// https://alpinejs.dev/advanced/extending
+Alpine.directive("uppercase", (el: Node) => {
+  var v = new Validation()
+  if (el.textContent !== null) {
+      el.textContent = v.uppercase(el.textContent)
+  }
+})
+
+// "Extensions must have been registered IN BETWEEN when the Alpine
+// global object is imported and when Alpine is initialized with
+// the Alpine.start() call"
 Alpine.start()
 

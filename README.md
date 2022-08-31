@@ -30,7 +30,7 @@ caddy file-server -browse -listen localhost:8080 -root ./
 
 Open [localhost:8080](http://localhost:8080)
 
-TODO watcher script for live-reload?
+TODO Watcher script for live-reload?
 
 
 ## Project Layout
@@ -43,9 +43,10 @@ Keep the `node_modules` dir lean. Only the AlpineJS source code is required. For
 ```bash
 npm install -S alpinejs
 npm install -D @types/alpinejs
+npm install -S sprintf-js
 npm install -D @types/sprintf-js
 du -sh ./node_modules
-# 1.3M
+# 1.4M
 ```
 
 Bundling is done with `esbuild`. Install globally (like `tsc`) instead of adding binaries to node_modules
