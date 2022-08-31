@@ -1,6 +1,7 @@
 import Alpine from 'alpinejs'
 import {sprintf} from "sprintf-js";
 import {Validation} from "./validation"
+import 'w3-css/w3.css';
 
 // Make alpine available on window for better DX
 window.alpine = Alpine

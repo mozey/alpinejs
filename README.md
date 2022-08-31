@@ -13,11 +13,9 @@ Also see [angularjs-validation](https://github.com/mozey/angularjs-validation)
 
 Build
 ```bash
-# Binaries are not versioned
-npm install 
-# Static analysis with tsc but don't build
+# Static analysis of TypeScript source with tsc, don't bundle
 tsc -noEmit 
-# Bundle app
+# Bundle app Javascript and CSS with esbuild
 # https://esbuild.github.io/api/#sourcemap
 esbuild src/main.ts --sourcemap --bundle --outfile=dist/app.js
 ```
@@ -45,8 +43,9 @@ npm install -S alpinejs
 npm install -D @types/alpinejs
 npm install -S sprintf-js
 npm install -D @types/sprintf-js
+npm install -S w3-css
 du -sh ./node_modules
-# 1.4M
+# 1.5M
 ```
 
 Bundling is done with `esbuild`. Install globally (like `tsc`) instead of adding binaries to node_modules
