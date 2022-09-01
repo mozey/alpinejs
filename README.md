@@ -1,6 +1,6 @@
 # alpinejs
 
-Misc AlpineJS and TypeScript examples and libs.
+Misc AlpineJS with TypeScript examples and libs.
 
 Styling is done with [w3.css](https://www.w3schools.com/w3css) because it's similar to Bootstrap and easier to use
 
