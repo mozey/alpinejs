@@ -1,10 +1,10 @@
-# alpinejs-validation
+# alpinejs
 
-AlpineJS and TypeScript starter project with validation directive example.
+Misc AlpineJS and TypeScript examples and libs.
 
-Styling is done with [w3.css](https://www.w3schools.com/w3css) because it's similar to Bootstrap and easier to use.
+Styling is done with [w3.css](https://www.w3schools.com/w3css) because it's similar to Bootstrap and easier to use
 
-Similar to [angularjs-validation](https://github.com/mozey/angularjs-validation) but simpler
+Also see [misc TypeScript examples and libs](https://github.com/mozey/ts)
 
 
 ## Demo
@@ -27,7 +27,7 @@ caddy file-server -browse -listen localhost:8080 -root ./www
 
 Open [localhost:8080](http://localhost:8080)
 
-TODO Watcher script for live-reload?
+**TODO** Watcher script for live-reload?
 
 
 ## Project Layout
@@ -51,5 +51,7 @@ Bundling is done with `esbuild`. Install globally (like `tsc`) instead of adding
 ```bash
 brew install esbuild
 ```
+
+**TODO** Consider [you may not need a bundler for your NPM library](https://news.ycombinator.com/item?id=32650990) post and discussion. Also look at [gts](https://github.com/google/gts)
 
 
